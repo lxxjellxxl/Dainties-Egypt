@@ -102,12 +102,13 @@ import TreeSelect from 'primevue/treeselect';
 import TreeTable from 'primevue/treetable';
 import TriStateCheckbox from 'primevue/tristatecheckbox';
 import VirtualScroller from 'primevue/virtualscroller';
-
+import VueGtag from 'vue-gtag-next';
 import BlockViewer from '@/components/BlockViewer.vue';
 import router from './router';
 import App from './App.vue';
 
 import '@/assets/styles.scss';
+// Import and configure VueGtag
 
 const app = createApp(App);
 
@@ -116,6 +117,13 @@ app.use(PrimeVue, { ripple: true });
 app.use(ToastService);
 app.use(DialogService);
 app.use(ConfirmationService);
+
+// Use VueGtag for Google Analytics
+app.use(VueGtag, {
+  property: {
+    id: 'G-E12KD22FFE',
+  },
+}, router);
 
 app.directive('tooltip', Tooltip);
 app.directive('badge', BadgeDirective);

@@ -51,6 +51,7 @@
     "vue-animate-onscroll": "^1.0.8",
     "vue-ctk-date-time-picker": "^3.0.0-alpha.0",
     "vue-flip-counter": "^0.0.11",
+    "vue-gtag-next": "^1.14.0",
     "vue-loader": "^16.1.2",
     "vue-router": "^4.0.13",
     "vue-scrollama": "^2.0.6",
